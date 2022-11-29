@@ -17,11 +17,18 @@
     color: #58A9A5;
     padding-left: 50px;
     background: url('../../assets/img/Group 1.png') no-repeat left center;
+    margin-right: 100px;
   }
-
+&__nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
   &__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 100%;
+    gap: 20px;
   }
 
   &__list-item {
@@ -29,12 +36,12 @@
     font-weight: 400;
     font-size: 25px;
     line-height: 38px;
-    margin-right: 80px;
   }
 
   &__link {
     color: #404242;
     display: inline-block;
+    white-space: nowrap;
 
     &:after {
       display: block;
@@ -56,10 +63,19 @@
     }
   }
   &__button{
+    flex: 0 0 auto;
     color: #fff;
     padding: 21px 88px;
     background: #58A9A5;
     border-radius: 15px;
+    margin-left: 100px;
+    cursor: pointer ;
+    opacity: .85;
+    transition: 0.2s all;
+
+    &:hover{
+      opacity: 1;
+    }
     &_link{
       color: #fff;
       font-family: 'Poppins', sans-serif;
