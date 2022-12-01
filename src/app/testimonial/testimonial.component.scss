@@ -1,0 +1,85 @@
+.testimonial {
+  margin-bottom: 240px;
+
+  &__title {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 105px;
+
+    text-align: center;
+
+    color: #1C2323;
+    margin-bottom: 22px;
+  }
+
+  &__brands {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 63px;
+  }
+
+  &__card {
+    display: flex;
+  }
+
+  &__card-img {
+    width: 38%;
+  }
+
+  &__card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 62%;
+    background: #CCF0E6;
+  }
+
+  &__card-wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+  }
+
+  &__card-wrapper-stat {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 70px;
+    max-width: 200px;
+    max-height: 180px;
+
+    color: #58A9A5;
+
+    &_small {
+      font-weight: 800;
+      font-size: 25px;
+      line-height: 38px;
+    }
+
+  }
+
+  &__card-info-text {
+    align-self: center;
+    max-width: 750px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 38px;
+    padding: 30px 20px;
+    background: url("../../assets/img/“.png") no-repeat;
+    color: #486958;
+
+    &_green {
+      display: inline-block;
+      margin-top: 35px;
+      font-style: italic;
+
+      color: #58A9A5;
+    }
+  }
+}
+
