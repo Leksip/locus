@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 10px;
 }
 
 .header {
@@ -17,13 +18,15 @@
     color: #58A9A5;
     padding-left: 50px;
     background: url('../../assets/img/Group 1.png') no-repeat left center;
-    margin-right: 100px;
+    //margin-right: 100px;
   }
-&__nav {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
   &__list {
     display: flex;
     justify-content: space-around;
@@ -62,21 +65,22 @@
       }
     }
   }
-  &__button{
+
+  &__button {
     flex: 0 0 auto;
     color: #fff;
     padding: 21px 88px;
     background: #58A9A5;
     border-radius: 15px;
-    margin-left: 100px;
-    cursor: pointer ;
+    cursor: pointer;
     opacity: .85;
     transition: 0.2s all;
 
-    &:hover{
+    &:hover {
       opacity: 1;
     }
-    &_link{
+
+    &_link {
       color: #fff;
       font-family: 'Poppins', sans-serif;
       font-weight: 500;
@@ -85,5 +89,99 @@
     }
   }
 
+  &__burger {
+    position: relative;
+    width: 70px;
+    height: 40px;
+    display: none;
+  }
+
+  &__burger-line {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #58A9A5;
+
+    &:last-child {
+      top: 50%;
+    }
+
+    &:first-child {
+      top: 100%
+    }
+  }
+}
+
+.hide-menu {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: #58A9A5;
+  transform: translateX(100%);
+  transition: .4s all linear;
+  z-index: 2;
+
+  &__list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &__link {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 38px;
+  }
+
+  &__close {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    z-index: 3;
+  }
+
+  &__close-line {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 100%;
+    background: #ffffff;
+    height: 2px;
+
+    &:last-child {
+      transform: rotate(45deg);
+    }
+
+    &:first-child {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__active {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .header {
+    &__nav {
+      display: none;
+    }
+
+    &__burger {
+      display: block;
+    }
+  }
 }
 
