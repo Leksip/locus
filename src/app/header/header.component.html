@@ -31,25 +31,8 @@
     </div>
   </div>
 </section>
-
-
-<div class="hide-menu" [class.hide-menu__active]="isActive">
-  <ul class="hide-menu__list">
-    <li class="hide-menu__list-item">
-      <a routerLink="/" class="hide-menu__link">Home</a>
-    </li>
-    <li class="hide-menu__list-item">
-      <a href="" class="hide-menu__link">Contact</a>
-    </li>
-    <li class="hide-menu__list-item">
-      <a href="" class="hide-menu__link">Location</a>
-    </li>
-    <li class="hide-menu__list-item">
-      <a href="" class="hide-menu__link">About Us</a>
-    </li>
-  </ul>
-  <div class="hide-menu__close" (click)="closeMenu()">
-    <span class="hide-menu__close-line"></span>
-    <span class="hide-menu__close-line"></span>
-  </div>
-</div>
+<!--(closeMenu)  получаем данные о событие от mobile-navigation и вызываем функцию закрыть меню  -->
+<app-mobile-navigation
+  [isActive]=isActive
+  (closeMenu)="closeMenu()"
+></app-mobile-navigation>

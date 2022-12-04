@@ -1,0 +1,20 @@
+<div class="mobile-nav" [class.mobile-nav__active]="isActive">
+  <ul class="mobile-nav__list">
+    <li class="mobile-nav__list-item">
+      <a routerLink="/" class="mobile-nav__link">Home</a>
+    </li>
+    <li class="mobile-nav__list-item">
+      <a href="" class="mobile-nav__link">Contact</a>
+    </li>
+    <li class="mobile-nav__list-item">
+      <a href="" class="mobile-nav__link">Location</a>
+    </li>
+    <li class="mobile-nav__list-item">
+      <a href="" class="mobile-nav__link">About Us</a>
+    </li>
+  </ul>
+  <div class="mobile-nav__close" (click)="onCloseMenu()">
+    <span class="mobile-nav__close-line"></span>
+    <span class="mobile-nav__close-line"></span>
+  </div>
+</div>

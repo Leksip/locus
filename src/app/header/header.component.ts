@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, ContentChild, ElementRef, OnInit} from '@angular/core';
 
 class User {
   name
@@ -15,7 +15,7 @@ class User {
 })
 export class HeaderComponent implements OnInit {
   isActive = false;
-
+  body = document.body
   constructor() {
   }
 
@@ -24,9 +24,11 @@ export class HeaderComponent implements OnInit {
 
   openMenu() {
     this.isActive = true
+    this.body.style.overflow = 'hidden'
   }
 
   closeMenu() {
     this.isActive = false
+    this.body.style.overflow = ''
   }
 }

@@ -1,0 +1,58 @@
+.mobile-nav {
+  width: 80%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: #58A9A5;
+  transform: translateX(100%);
+  transition: .4s all linear;
+  z-index: 2;
+
+  &__list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &__link {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 38px;
+  }
+
+  &__close {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    z-index: 3;
+    cursor: pointer;
+  }
+
+  &__close-line {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 100%;
+    background: #ffffff;
+    height: 2px;
+
+    &:last-child {
+      transform: rotate(45deg);
+    }
+
+    &:first-child {
+      transform: rotate(-45deg);
+    }
+  }
+  &__active {
+    transform: translateX(0);
+  }
+}

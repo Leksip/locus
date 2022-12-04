@@ -65,3 +65,13 @@
   }
 
 }
+@media  screen and (max-width: 780px){
+.start-page{
+  &__img-container{
+    order: -1;
+  }
+}
+  .container-inner{
+    padding-top: 180px;
+  }
+}
