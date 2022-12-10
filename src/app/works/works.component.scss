@@ -33,9 +33,11 @@
     width: 100%;
     margin-bottom: 150px;
   }
-&__video-img{
-  width: 68%;
-}
+
+  &__video-img {
+    width: 68%;
+  }
+
   &__video-offer {
     position: relative;
     width: 30%;
@@ -45,7 +47,8 @@
     justify-content: space-around;
     background: #CCF0E6;
     border-radius: 0 10px 10px 0;
-    &_container{
+
+    &_container {
       width: 70%;
       height: 60%;
       display: flex;
@@ -61,8 +64,8 @@
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 1.25vw;
+    line-height: 2vw;
     color: #486958;
   }
 
@@ -70,14 +73,15 @@
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.5vw;
     line-height: 30px;
     text-transform: uppercase;
     letter-spacing: 3px;
     opacity: .85;
     cursor: pointer;
     transition: 0.2s all;
-    &:hover{
+
+    &:hover {
       opacity: 1;
 
     }
@@ -85,7 +89,8 @@
 
     color: #486958;
   }
-  &__video-button{
+
+  &__video-button {
     position: absolute;
     top: 60%;
     left: -10%;
@@ -93,73 +98,72 @@
     height: auto;
     transition: 0.2s all;
     cursor: pointer;
-    &:hover{
+
+    &:hover {
       transform: scale(1.05);
     }
   }
-  &__visual{
+
+  &__visual {
     display: flex;
     width: 100%;
     margin-bottom: 120px;
     gap: 145px;
   }
-  &__visual-img{
+
+  &__visual-img {
     flex: 1 0 auto;
     max-width: 40%;
   }
-  &__visual-offer{
+
+  &__visual-offer {
     max-width: 60%;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     align-items: flex-start;
   }
-  &__visual-offer-title{
+
+  &__visual-offer-title {
     max-width: 490px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
-    line-height: 60px;
+    font-size: 4vw;
+    line-height: 4vw;
     margin-bottom: 50px;
 
     color: #1C2323;
 
   }
-  &__visual-offer-text{
+
+  &__visual-offer-text {
     max-width: 708px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 30px;
-    line-height: 45px;
+    font-size: 2vw;
+    line-height: 3vw;
 
     color: #486958;
 
   }
 }
 
+.img {
+  min-height: 150px;
+}
 
-@media screen and (max-width: 770px){
-.works{
-  &__video-offer-text {
-    font-size: 12px;
-    line-height: 15px;
-  }
-  &__video-offer-link{
-    font-size: 12px;
-    line-height: 15px;
-  }
-  &__visual{
-    gap:20px;
-  }
-  &__visual-offer-title{
-    font-size: 25px;
-    line-height: 30px;
-  }
-  &__visual-offer-text{
-    font-size: 12px;
-    line-height: 15px;
+
+@media screen and (max-width: 990px) {
+  .works {
+    &__visual {
+      gap: 20px;
+    }
   }
 }
+@media screen and (max-width: 770px){
+  .works__video{
+
+  }
 }

@@ -13,8 +13,8 @@
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 800;
-    font-size: 70px;
-    line-height: 105px;
+    font-size: 4vw;
+    line-height: 6vw;
     color: #1C2323;
   }
 
@@ -25,25 +25,27 @@
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 30px;
-    line-height: 45px;
+    font-size: 2.5vw;
+    line-height: 3vw;
 
     color: #404242;
   }
-  &__button{
+
+  &__button {
     flex: 0 0 auto;
     background: #58A9A5;
     border-radius: 20px 20px 20px 0;
     padding: 21px 90px;
-    cursor: pointer ;
+    cursor: pointer;
     opacity: .85;
     transition: 0.2s all;
 
-    &:hover{
+    &:hover {
       opacity: 1;
     }
   }
-  &__link{
+
+  &__link {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -65,13 +67,24 @@
   }
 
 }
-@media  screen and (max-width: 780px){
-.start-page{
-  &__img-container{
-    order: -1;
+
+@media screen and (max-width: 960px) {
+  .container-inner {
+    flex-wrap: wrap;
+    justify-content: center;
   }
+  .start-page {
+    &__img-container {
+      order: -1;
+    }
+&__photo{
+  width: 70%;
+  margin: 0 auto;
 }
-  .container-inner{
-    padding-top: 180px;
   }
+  .container-inner {
+    padding-top: 150px;
+    gap: 20px;
+  }
+
 }

@@ -1,4 +1,8 @@
 .mobile-nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
   width: 80%;
   height: 100%;
   position: fixed;
@@ -23,6 +27,29 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 55px;
+    line-height: 38px;
+  }
+
+  &__button {
+    text-align: center;
+    width: 50%;
+    padding: 15px;
+    background: #e2fff9;
+    border-radius: 15px;
+    cursor: pointer;
+    opacity: .85;
+    transition: 0.2s all;
+    margin-bottom: 20px;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__button-link {
+    color: #58A9A5;
+    font-weight: 500;
+    font-size: 35px;
     line-height: 38px;
   }
 
@@ -52,6 +79,7 @@
       transform: rotate(-45deg);
     }
   }
+
   &__active {
     transform: translateX(0);
   }
