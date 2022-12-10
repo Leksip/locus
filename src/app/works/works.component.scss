@@ -162,8 +162,17 @@
     }
   }
 }
-@media screen and (max-width: 770px){
-  .works__video{
+
+@media screen and (max-width: 720px) {
+  .works {
+    &__title {
+      font-size: 50px;
+      line-height: 1;
+    }
+
+    &__video, &__visual, &__visual-offer-title {
+      margin-bottom: 20px;
+    }
 
   }
 }

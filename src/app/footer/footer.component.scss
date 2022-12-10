@@ -6,6 +6,7 @@
 
 .footer {
   margin-bottom: 50px;
+
   &__offer {
     display: flex;
     flex-direction: column;
@@ -37,8 +38,10 @@
 
   &__form {
     display: flex;
+    gap: 20px;
     flex: 1 0 655px;
     flex-direction: column;
+    max-width: 100%;
     justify-content: space-around;
     border: 2px solid #486958;
     box-shadow: 0 0 2px 0 #486958;
@@ -70,23 +73,18 @@
     }
   }
 
-  &__form-email {
-    margin-top: 32px;
-  }
-
   &__form-desc {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 25px;
     line-height: 38px;
-    margin-top: 57px;
     color: #486958;
   }
-  &__form-button{
+
+  &__form-button {
     align-self: flex-end;
-    width: 271px;
-    height: 80px;
+
 
     background: #58A9A5;
     border-radius: 20px 20px 20px 0;
@@ -95,16 +93,37 @@
     font-weight: 700;
     font-size: 25px;
     line-height: 38px;
-
+    padding: 20px 25px;
     color: #FFFFFF;
 
     cursor: pointer;
     opacity: .85;
     transition: 0.2s all;
 
-    &:hover{
+    &:hover {
       opacity: 1;
     }
 
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .footer {
+    &__offer-title {
+      font-size: 50px;
+    }
+
+    &__form {
+      padding: 35px;
+    }
+
+    &__form-button {
+      align-self: flex-start;
+      font-size: 4vw;
+      padding: 10px 15px;
+    }
+  }
+  .container-inner {
+    gap: 30px;
   }
 }

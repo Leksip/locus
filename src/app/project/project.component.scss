@@ -67,20 +67,32 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .project{
-    &__cards{
+  .project {
+    &__cards {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      margin-bottom: 100px;
     }
-    &__card{
+
+    &__card {
       display: flex;
       flex-direction: column;
-    align-items:center;
-  }
-    &__card-img-first{
+      align-items: center;
+      text-align: center;
+    }
+
+    &__card-img-first {
       order: 1;
       margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .project {
+    &__title {
+      font-size: 50px;
     }
   }
 }
