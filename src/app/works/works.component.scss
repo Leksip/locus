@@ -60,11 +60,10 @@
 
   &__video-offer-text {
 
-    height: 120px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 1.25vw;
+    font-size: 1vw;
     line-height: 2vw;
     color: #486958;
   }
@@ -92,7 +91,7 @@
 
   &__video-button {
     position: absolute;
-    top: 60%;
+    top: 56%;
     left: -10%;
     width: 22%;
     height: auto;
